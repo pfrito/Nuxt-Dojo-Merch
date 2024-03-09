@@ -11,10 +11,21 @@
       repellendus asperiores nam saepe vero! Nisi expedita iusto aperiam debitis
       recusandae?
     </p>
+
+    <div>{{ data }}</div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+// const { data } = await useFetch("/api/ninja?name=mario", {
+//   method: "post",
+//   body: {
+//     age: 30,
+//   },
+// });
+
+const { data } = await useFetch("/api/currency/GBP");
+</script>
 
 <style scoped>
 h2 {
